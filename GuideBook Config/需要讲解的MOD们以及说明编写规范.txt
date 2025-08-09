@@ -1,0 +1,60 @@
+你好啊，很高兴能一起完善这本指南书，来往下看看吧，我们要做的事情有很多
+唯二的要求：1.了解html/xml文件的结构 2.充满激情的心
+
+重要：如果要为我的仓库进行编写，你需要在QQ群联系我，给我你的GitHub用户名，我可以开放你的编辑权限
+
+要编写说明的MOD（建议按照顺序来编写）：
+1.Vampirism（血族传说）
+2.Werewolves（狼人）
+3.Wall-Jump TXF
+4.Just Another Void Dimension（私人虚空领域）
+5.MineColonies（模拟殖民地）
+6.Mekanism（通用机械）
+7.OpenCompters 2 Reimaged（开放式电脑2）
+8.CC : Tweaked
+9.JRFTL（腐肉换皮革）（这个一笔带过就行了，让玩家知道腐肉可以烧成皮革）
+10.Cyclic（循环）
+11.DimensionalDoors（次元门）
+
+编写规范：
+该部分的说明区域位于XML文件的第82行，即S3，在提示对应的page下方自己再加上page，然后就像做html网页一样完善这个教程了。为了方便，你也可以安装一个游戏副本并安装guidebook mod自行测试最终效果再commit，xml文件存放在 游戏核心文件夹/config/books
+当然，如果你认为82行前面有可以完善的部分，可以修改的，修改过后在qq群联系我审核
+
+编写小技巧（改编自guidebook原作者在GitHub的wiki）：
+1.如果你的内容很多，一页装不下，你可以另起一个page，具体看例子：
+<page>
+	<p>一大堆内容</p>	
+</page>
+<page>
+	<p>又一大堆内容</p>
+</page>
+以此类推
+
+2.我想添加图片
+	(1).如果想添加物品图片，可以根据如下例子：
+	<image src="Minecraft:items/clock" tw="16" th="16" /> #这样可以把钟的贴图放进去了
+	(2).如果想添加自己的图片
+	可以将图片放到xml文件下的resources\textures里，我只要有时间看仓库，我就把整个xml，图片都更新到服务器里
+	<image src="gbook:xxx" tw="16" th="16" /> #xxx为你的文件名，不包含文件后缀，文件建议为png格式，tw，th为像素宽高，可以自行调整
+
+3.我想个性化字体
+首先是title，其风格是在具有强调性的字体加上了下划线：<title>文本内容</title>
+其次是p，其风格可以多样化：
+(1) <p>文本内容</p> #这个是最基础的
+(2) <p align="center">文本内容</p> #可以把文本放到行中心
+(3) <p scale="1.5">文本内容</p> #可以定义文本大小，例子是把文本大小修正为1.5倍
+(4) <p bold="true">Text Content></p> #可以将文本内容加粗，仅支持ASCII文字，UTF-8文字没有效果
+(5) <p italics="true">文本内容</p> #可以使文字变斜
+(6) <p indent="10">文本内容</p> #可以在文本内容前空几格
+(7) <p space="10">文本内容</p> #可以在下个文本前空几格
+别忘了！这些东西都是可以混着用的，大家合理利用！
+
+4.我想插入网址或快速跳转到其他页
+	(1) 如果你想插入网址，可以根据以下例子：
+	<link href="https://xxx.com">很酷的网页</link>
+	(2) 如果你想跳转到其他页面，可以根据以下例子
+	<link ref="S3[:1]">跳转到本章节第一页</link>
+
+5.比起单纯的添加物品图片，我更想添加带tag的物品到说明
+根据这个例子：
+	<stack item="minecraft:black_wool" meta="0" count="1" /> #可以通过count值给玩家物品数量提示

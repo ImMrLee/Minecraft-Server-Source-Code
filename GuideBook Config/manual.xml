@@ -1,0 +1,88 @@
+<book title="阿兰的服务器指南">
+	<chapter id="post">
+		<page>
+			<title>玩前先阅</title>
+			<p align="center" scale="1.5">少走114514条弯路！</p>
+			<p align="center">-----------------</p>
+			<p align="center" color="#FF0000" bold="true" italics="true" scale="2.0">WARNING!</p>
+			<p scale="1.2">本服务器目前处于试运行阶段，目的是测试mods在多人游戏的体验性，后续将会添加/删除一些mods，必要的情况下会重开地图！如果介意的话可以以后再来玩，或者在QQ群为我提供反馈，让我搞出体验更好的服务器</p>
+			<p italics="true">试行阶段服务器运行时间: 9:00-22:00 Mon-Sat</p>
+		</page>
+		<page>
+			<p>PS：本人第一次开服，也是第一次编写xml来完成这个指南</p>
+			<p scale="1.3">想知道我都挑选了什么mod，可以在游戏菜单查询，我还安装了configured mod，方便大家自行调整体验！资源包有Fresh Animation哦，光影自行下载</p>
+			<link href="https://space.bilibili.com/342035323">UP主B站链接，追踪服务器动态</link>
+			<link href="https://github.com/ImMrLee/Minecraft-Server-Source-Code">去GitHub查阅相关源码</link>
+			<p align="center">-----------------</p>
+			<p italics="true">准备好开始了？点击右下角的单箭头查看目录！</p>
+		</page>
+	</chapter>
+	<chapter id="catalogue">
+		<page>
+			<title>目录</title>
+			<p scale="1.2">第一节-服务器介绍</p>
+			<link ref="S1">点击跳转</link>
+			<p scale="1.2">第二节-这个服怎么玩？</p>
+			<link ref="S2">点击跳转</link>
+			<p scale="1.2">第三节-核心mods玩法介绍与提示</p>
+			<link ref="S3">点击跳转</link>
+		</page>
+	</chapter>
+	<chapter id="S1">
+		<page>
+			<title>服务器介绍-关于我</title>
+			<p>欢迎来到我开的服务器，你可以叫我阿兰亚瑟（在b站我还叫米斯特...），不过那不重要了</p>
+			<p align="center" scale="0.5">-</p>
+			<p>首先呢，我是个MC玩家（主玩国际服），我也玩过很多服务器，可是不同的人，品味也有很多差异。我是一个既爱好机械自动化，lua自动化，多维度探险，还对角色扮演，阵营策略感兴趣的玩家。所以，我花了点时间找了一些mod整合到了一起</p>
+			<p align="center" scale="0.5">-</p>
+			<p>我嘛，是一个高考完准备上大学的小初生，我的个性都能从我在B站（近几个月）发布的视频看出来</p>
+			<p align="center" scale="0.5">-</p>
+			<p>但是只有一个人玩太没有意思了，我在网上还找不到带有血族传说和狼人的服务器，所以我就这样决定了：我要开一个服务器！</p>
+		</page>
+		<page>
+			<title>服务器的基本配置</title>
+			<p>在初期，我计划把服务器装在我的个人电脑作为试行，并稍微限制一下人数，等后期我的资金充足了，我就要去购买域名，买一台高配置的服务器，让大家放开玩</p>
+			<p align="center" scale="1.5">目前服务器配置</p>
+			<p scale="1.2">CPU i9-14900HX</p>
+			<p scale="1.2">Mem 16+16GB</p>
+			<p scale="1.2">Disk 1TB PCIe 5.0 NVMe SDD</p>
+			<p scale="1.2">VGA NVIDIA GeForce RTX 5060 Laptop</p>
+			<p scale="0.5">PS：先别说别的，就这个i9就够很多人玩了吧</p>
+		</page>
+		<page>
+			<title>我选择1.20.1版本的原因</title>
+			<p>我原以为1.7.10，1.12.2和1.16.5的mod生态就够天马行空了，1.20.1又突破了我的想象</p>
+			<p align="center" scale="0.5">-</p>
+			<p>我本来希望在1.21.1建服的，可是有很多mod（循环，龙之进化，开放式电脑2，简单商店等等）最高只支持1.20.1</p>
+			<p align="center" scale="0.5">-</p>
+			<p>而且大部分的腐竹也都喜欢用1.20.1作为现代服务器，那我就跟随时代潮流，安排上了'Minecraft 1.20.1 Forge'</p>
+			<p align="center" scale="0.5">-</p>
+			<p>说实话，我不能确定我选的mod是不是很好，以及是否有更好的替代方案，如果你有改进意见，可以加入我的QQ群</p>
+		</page>
+	</chapter>
+	<chapter id="S2">
+		<page>
+			<title>服务器玩法梗概</title>
+			<p scale="0.7">你和其他玩家随机出生在了荒野，等待你们的不是平平无奇的探索和挖矿...</p>
+			<p scale="0.9">好吧，作为普通人，探索和挖矿是必需的，不过呢，这个地图有泥土商店系统，输入/shop即可传送到商店，你可以把你手上的废品成堆地换成更有价值的东西，在服务器试行阶段所有物品的性价比超高！</p>
+			<p align="center" scale="0.5">-</p>
+			<p scale="0.9">如果你不想做普通人，你可以变身吸血鬼，狼人，猎人，占领各种村庄称霸大陆，还有对应的商店专区，获得特别的游戏体验！（其实这才是该服务器的核心玩法）</p>
+			<p align="center" scale="0.5">-</p>
+			<p scale="0.9">除此之外，这个服务器还有能源类mod通用机械，跑着货真价实的linux系统的开放式电脑2，自定义性超高的Compuer Craft，超级经典的暮色森林，还有最终的龙之进化！还远远不止如此</p>
+		</page>
+		<page>
+			<title>游戏初期指南</title>
+			<p>你可以在世界采集资源的同时寻找吸血鬼森林/狼人森林/猎人村庄来改变自己的身份，通过不同手段来让自己升级；于此同时，你还可以获取关键资源或通过商店购买‘虚空传送门’开拓自己的维度，从一个虚空岛开始打造自己的世界！（如果你有模拟殖民地蓝图，建议把殖民地安置在虚空岛，主世界为资源地作用为主）</p>
+		</page>
+		<page>
+			<title>游戏后期指南</title>
+			<p>你的角色已经达到登峰造极的层次，而且你的殖民地也十分壮大，你可以在主世界寻找末地要塞到达末地，寻找龙矿，向更高级发展（我也不知道要怎么编了）</p>
+		</page>
+	</chapter>
+	<chapter id="S3">
+		<page>
+			<title>提示</title>
+			<p>该章节主要讲解比较复杂的mod的游玩教程，可能有很多错误疏漏点，该xml文件已存放在GitHub上，可以在本书第二页访问，若有异议可以自行修改并提交，一起打造更好的说明，需要讲解的mod列表以及说明编写规范与该xml文件在同一文件夹下，作为参考</p>
+		</page>
+	</chapter>
+</book>
